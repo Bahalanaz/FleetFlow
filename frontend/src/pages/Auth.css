@@ -1,0 +1,143 @@
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ff-surface);
+  padding: 1rem;
+}
+
+.auth-container {
+  background: var(--ff-white);
+  border: 1px solid var(--ff-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+
+.ff-auth-header {
+  margin-bottom: 1.5rem;
+}
+
+.ff-auth-brand {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ff-muted);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.auth-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.auth-subtitle {
+  font-size: 0.875rem;
+  color: var(--ff-muted);
+  margin-bottom: 1.75rem;
+}
+
+/* ── Form fields ─────────────────────────────────────────────────────────── */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ff-mid);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--ff-border);
+  border-radius: var(--radius-md);
+  background: var(--ff-white);
+  color: var(--ff-black);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input:focus {
+  border-color: var(--ff-black);
+  box-shadow: 0 0 0 3px rgba(17,17,17,0.08);
+}
+
+input::placeholder {
+  color: #b0b0b0;
+}
+
+/* ── Submit button ───────────────────────────────────────────────────────── */
+
+.auth-container button[type="submit"],
+.auth-container .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--ff-black);
+  background: var(--ff-black);
+  color: var(--ff-white);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.auth-container button[type="submit"]:hover,
+.auth-container .btn-primary:hover {
+  opacity: 0.82;
+}
+
+/* ── Messages ────────────────────────────────────────────────────────────── */
+
+.msg-error {
+  font-size: 0.82rem;
+  color: #b00;
+  background: #fff5f5;
+  border: 1px solid #f5c0c0;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.msg-success {
+  font-size: 0.82rem;
+  color: #1a6a1a;
+  background: #f3faf3;
+  border: 1px solid #b8ddb8;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+/* ── Footer link ─────────────────────────────────────────────────────────── */
+
+.auth-footer {
+  margin-top: 1.25rem;
+  font-size: 0.82rem;
+  color: var(--ff-muted);
+  text-align: center;
+}

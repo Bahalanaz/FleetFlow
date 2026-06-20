@@ -1,0 +1,9 @@
+/* index.css — base resets only; FleetFlow theme lives in styles/global.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
